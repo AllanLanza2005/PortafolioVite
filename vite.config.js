@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import { purgeCss } from 'vite-plugin-purgecss';
+import purgeCSS from 'vite-plugin-purgecss';
 
 export default defineConfig({
   base: '/PortafolioVite/', 
   plugins: [
-    purgeCss({
+    purgeCSS({ 
       content: ['./index.html', './src/**/*.js', './less/**/*.less']
     })
   ],
